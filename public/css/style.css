@@ -1,0 +1,141 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: "Montserrat";
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.scoreboard {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#score {
+    font-weight: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+#btn button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#btn {
+    margin: 20px 0;
+}
+#btn button:nth-child(1) {
+    background-color: #4CAF50;
+}
+#btn button:nth-child(1):hover {
+    background-color: #65b568;
+}
+#btn button:nth-child(2) {
+    background-color: #008CBA;
+}
+#btn button:nth-child(2):hover {
+    background-color: #28a4ce;
+}
+#btn button:nth-child(3) {
+    background-color: #f44336;
+}
+#btn button:nth-child(3):hover {
+    background-color: #f07168;
+}
+#btn button:nth-child(4) {
+    background-color: #555555;
+}
+#btn button:nth-child(4):hover {
+    background-color: #969696;
+}
+#btn button:nth-child(5) {
+    background-color: #e7e7e7;
+    color: black;
+}
+#btn button:nth-child(5):hover {
+    background-color: #dddddd;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.modal-content #message {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+}
+.modal-content input, .modal-content button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
